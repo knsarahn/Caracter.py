@@ -1,0 +1,13 @@
+altura_arvore = int(input("Digite a altura da árvore de Natal: "))
+
+for i in range(1, altura_arvore + 1):
+    espacos = " " * (altura_arvore - i)
+    asteriscos = "*" * (2 * i - 1)
+    print(espacos + asteriscos)
+    tronco_altura = altura_arvore // 3
+tronco_largura = altura_arvore // 3
+
+espacos_tronco = " " * (altura_arvore - tronco_largura)
+tronco = "#" * tronco_largura
+for _ in range(tronco_altura):
+    print(espacos_tronco + tronco)
