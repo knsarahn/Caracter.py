@@ -1,0 +1,65 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/knsarahn/Caracter.py/blob/codespace-expert-space-telegram-pxx76jg944gh6jjj/Abubl%C3%A9\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "notas = {\"Raphael\": [5, 8, 2],\n",
+        "         \"Sarah\": [4, 7, 10],\n",
+        "         \"Lívia\": [6, 2, 4],\n",
+        "         \"Gabriel\": [10, 4, 6],\n",
+        "         \"Alisson\": [3, 7, 9]}\n",
+        "for aluno, notas_aluno in notas.items():\n",
+        "    media = sum(notas_aluno) / len(notas_aluno)\n",
+        "    print(f\"A média de {aluno} é: {media:.2f}\")\n",
+        "medias_total = sum(medias) / len(medias)\n",
+        "print(f\"A média da sala é: {medias_total:.2f}\")"
+      ],
+      "metadata": {
+        "id": "lormarZ51li-",
+        "outputId": "1e621865-d2c1-4957-97aa-f7c688efdf3b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A média de Raphael é: 5.00\n",
+            "A média de Sarah é: 7.00\n",
+            "A média de Lívia é: 4.00\n",
+            "A média de Gabriel é: 6.67\n",
+            "A média de Alisson é: 6.33\n",
+            "A média da sala é: 7.97\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Olá, este é o Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
