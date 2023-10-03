@@ -1,0 +1,389 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/knsarahn/Caracter.py/blob/codespace-expert-space-telegram-pxx76jg944gh6jjj/Curso%20em%20v%C3%ADdeo\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def mostraLinha():\n",
+        "  print('-----------------------')\n",
+        "\n",
+        "\n",
+        "mostraLinha()\n",
+        "print('   SISTEMA DE ALUNOS  ')\n",
+        "mostraLinha()\n",
+        "mostraLinha()\n",
+        "print('    ERRO NO SISTEMA   ')\n",
+        "mostraLinha()"
+      ],
+      "metadata": {
+        "id": "yOfESORKnL67",
+        "outputId": "ca0ce42c-e316-42c5-f718-a597fda49872",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-----------------------\n",
+            "   SISTEMA DE ALUNOS  \n",
+            "-----------------------\n",
+            "-----------------------\n",
+            "    ERRO NO SISTEMA   \n",
+            "-----------------------\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def soma(a, b):\n",
+        "    s = a + b\n",
+        "    print(s)\n",
+        "\n",
+        "\n",
+        "soma(4, 5)\n",
+        "soma(7, 6)\n",
+        "soma(9, 2)"
+      ],
+      "metadata": {
+        "id": "zebCfXw4rXYV",
+        "outputId": "9838f773-2700-4a57-d0e8-40b09b0c2cdb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "13\n",
+            "11\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def area(largura, comprimento):\n",
+        "    area_terreno = largura * comprimento\n",
+        "    return area_terreno\n",
+        "\n",
+        "largura = float(input(\"Digite a largura do terreno: \"))\n",
+        "comprimento = float(input(\"Digite o comprimento do terreno: \"))\n",
+        "\n",
+        "resultado = area(largura, comprimento)\n",
+        "\n",
+        "print(f\"A área do terreno é: {resultado} metros quadrados\")"
+      ],
+      "metadata": {
+        "id": "JpjTU90TyL4V",
+        "outputId": "54e650a1-40d0-4b16-819f-40e20f63060d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a largura do terreno: 20\n",
+            "Digite o comprimento do terreno: 40\n",
+            "A área do terreno é: 800.0 metros quadrados\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def escreva(texto):\n",
+        "    tamanho = len(texto)\n",
+        "    print('*' * (tamanho + 4))\n",
+        "    print(f'* {texto} *')\n",
+        "    print('*' * (tamanho + 4))\n",
+        "\n",
+        "texto_inserido = input(\"Digite um texto: \")\n",
+        "escreva(texto_inserido)"
+      ],
+      "metadata": {
+        "id": "Wq-o5CI7yWy9",
+        "outputId": "3f817a4e-7faf-4a7d-f900-1736ba014157",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um texto: Hi, barbie\n",
+            "**************\n",
+            "* Hi, barbie *\n",
+            "**************\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def contar(inicio, fim, passo):\n",
+        "    for i in range(inicio, fim, passo):\n",
+        "        print(i, end=' ')\n",
+        "    print()\n",
+        "\n",
+        "\n",
+        "print(\"Contagem de 1 até 10, de 1 em 1:\")\n",
+        "contar(1, 11, 1)\n",
+        "\n",
+        "\n",
+        "print(\"Contagem de 10 até 0, de 2 em 2:\")\n",
+        "contar(10, -1, -2)"
+      ],
+      "metadata": {
+        "id": "zvrPkcmiyq2t",
+        "outputId": "413a065c-b68d-497a-fd8a-17fc700e772e",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Contagem de 1 até 10, de 1 em 1:\n",
+            "1 2 3 4 5 6 7 8 9 10 \n",
+            "Contagem de 10 até 0, de 2 em 2:\n",
+            "10 8 6 4 2 0 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def encontrar_maior(*valores):\n",
+        "    if len(valores) == 0:\n",
+        "        return None\n",
+        "\n",
+        "    maior = valores[0]\n",
+        "    for valor in valores:\n",
+        "        if valor > maior:\n",
+        "            maior = valor\n",
+        "    return maior\n",
+        "\n",
+        "\n",
+        "entrada = input(\"Digite valores inteiros separados por espaços: \")\n",
+        "\n",
+        "\n",
+        "valores_inteiros = [int(valor) for valor in entrada.split()]\n",
+        "\n",
+        "\n",
+        "maior_valor = encontrar_maior(*valores_inteiros)\n",
+        "\n",
+        "\n",
+        "if maior_valor is not None:\n",
+        "    print(f\"O maior valor é: {maior_valor}\")"
+      ],
+      "metadata": {
+        "id": "fsCmhK0pzi-I",
+        "outputId": "b431a340-c9a5-4ae3-8c00-84f5f2b390c5",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite valores inteiros separados por espaços: 10 20 30 40 50\n",
+            "O maior valor é: 50\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def somar (a= 0, b= 0, c= 0):\n",
+        "    s = a + b + c\n",
+        "    return s\n",
+        "\n",
+        "r1 = somar (1, 2, 3)\n",
+        "r2 = somar (10, 20, 30)\n",
+        "r3 = somar ( 5, 10, 15)\n",
+        "\n",
+        "print(f'Os resultados foram {r1}, {r2}, {r3}')"
+      ],
+      "metadata": {
+        "id": "NMT6BjAv1WUI",
+        "outputId": "2b27437b-7c0a-494b-f25e-a5a2eee65057",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Os resultados foram 6, 60, 30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def voto(ano_nascimento):\n",
+        "    idade = 2023 - ano_nascimento\n",
+        "\n",
+        "    if 16 <= idade < 18 or idade >= 70:\n",
+        "        return \"Voto opcional\"\n",
+        "    elif 18 <= idade < 70:\n",
+        "        return \"Voto obrigatório\"\n",
+        "    else:\n",
+        "        return \"Voto negado\"\n",
+        "\n",
+        "ano_nascimento = int(input(\"Digite o ano de nascimento: \"))\n",
+        "resultado = voto(ano_nascimento)\n",
+        "print(f\"Para a idade de {2023 - ano_nascimento} anos, o voto é: {resultado}\")"
+      ],
+      "metadata": {
+        "id": "BfH_CDCJ8Lrs",
+        "outputId": "9df07a06-70f5-47eb-9c46-2dba68f141fe",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o ano de nascimento: 2006\n",
+            "Para a idade de 17 anos, o voto é: Voto opcional\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def ficha(nome='', gols=0):\n",
+        "    if nome == '':\n",
+        "        nome = '<desconhecido>'\n",
+        "\n",
+        "    print(f\"Jogador: {nome}\")\n",
+        "    print(f\"Gols marcados: {gols}\")\n",
+        "\n",
+        "nome_jogador = input(\"Digite o nome do jogador: \")\n",
+        "gols_jogador = input(\"Digite a quantidade de gols: \")\n",
+        "\n",
+        "\n",
+        "if gols_jogador.isdigit():\n",
+        "    gols_jogador = int(gols_jogador)\n",
+        "    ficha(nome_jogador, gols_jogador)\n",
+        "else:\n",
+        "    ficha(nome_jogador)"
+      ],
+      "metadata": {
+        "id": "AqpTF3Ii-bdI",
+        "outputId": "b50b9416-8a16-46ba-d2ac-3c8795063d3d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o nome do jogador: Cristiano Ronaldo\n",
+            "Digite a quantidade de gols marcados: 76\n",
+            "Jogador: Cristiano Ronaldo\n",
+            "Gols marcados: 76\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def leiaint(mensagem):\n",
+        "    while True:\n",
+        "        try:\n",
+        "            valor = int(input(mensagem))\n",
+        "            return valor\n",
+        "        except ValueError:\n",
+        "            print(\"Valor inválido. Por favor, insira um número inteiro válido.\")\n",
+        "\n",
+        "numero = leiaint(\"Digite um número inteiro: \")\n",
+        "print(f\"Você digitou o número inteiro: {numero}\")"
+      ],
+      "metadata": {
+        "id": "EdnzKYwK_PFH",
+        "outputId": "3ee77290-8f28-412d-ac86-0fdc907a84e0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 13,5\n",
+            "Valor inválido. Por favor, insira um número inteiro válido.\n",
+            "Digite um número inteiro: 14\n",
+            "Você digitou o número inteiro: 14\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Olá, este é o Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
